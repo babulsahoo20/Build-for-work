@@ -1,0 +1,79 @@
+{
+  "name": "@shababul_alam/vue2-expand-on-tap",
+  "version": "1.2.6",
+  "description": "An expand on tap component for vue.js.",
+  "main": "dist/expand-on-tap.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name expand-on-tap ./src/plugin-entry.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.4",
+    "intersection-observer": "^0.7.0",
+    "vue": "^2.6.11",
+    "webpack": "^4.36.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShababulAlam/vue2-expand-on-tap.git"
+  },
+  "author": "shababulalam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShababulAlam/vue2-expand-on-tap/issues"
+  },
+  "homepage": "https://github.com/ShababulAlam/vue2-expand-on-tap#readme",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "keywords": [
+    "collapsable",
+    "vue2",
+    "expand",
+    "tap",
+    "expandable",
+    "expand on tap",
+    "tap to expand",
+    "read more"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
